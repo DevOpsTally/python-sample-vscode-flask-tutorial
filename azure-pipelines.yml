@@ -27,5 +27,13 @@ steps:
 - script: |
     pip install pytest pytest-azurepipelines
     pytest
-    dddcs
   displayName: 'pytest'
+  
+ - script: |
+    sudo apt install cmake
+  displayName: 'cmake install'
+  
+- script: |
+    cmake -P testing.cmake
+    pytest
+  displayName: 'testing end result'
