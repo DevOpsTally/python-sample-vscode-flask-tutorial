@@ -26,7 +26,7 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
-    pytest1
+    cd /home/a/
   displayName: 'pytest'
   
 - script: |
