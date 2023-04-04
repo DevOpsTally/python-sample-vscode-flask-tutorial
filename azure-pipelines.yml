@@ -26,11 +26,11 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
-    pytest
+    pytest1
   displayName: 'pytest'
   
 - script: |
-    sudo apt install cmake
+    apt install cmake
   displayName: 'cmake install'
   
 - script: |
