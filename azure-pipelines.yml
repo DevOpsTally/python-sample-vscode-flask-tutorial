@@ -29,7 +29,7 @@ steps:
   displayName: 'pytest'
   
 - script: |
-    apt install cmake
+    sudo apt install cmake
   displayName: 'cmake install'
   
 - script: |
