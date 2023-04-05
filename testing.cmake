@@ -1,2 +1,2 @@
-message(INFO "Testing.cmake is being executed")
+message(DEBUG "Testing.cmake is being executed")
 
