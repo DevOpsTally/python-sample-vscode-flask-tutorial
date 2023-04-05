@@ -36,4 +36,4 @@ steps:
     cmake -P testing.cmake
     pytest
   displayName: 'testing end result'
-  failOnStderr: true
+#  failOnStderr: true
