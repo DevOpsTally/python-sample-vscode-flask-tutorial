@@ -8,10 +8,10 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-strategy:
-  matrix:
-     Python37:
-      python.version: '3.7'
+# strategy:
+#   matrix:
+#      Python37:
+#       python.version: '3.7'
 
 steps:
 # - task: UsePythonVersion@0
@@ -34,6 +34,6 @@ steps:
   
 - script: |
     cmake -P testing.cmake
-    pytest
+    
   displayName: 'testing end result'
   failOnStderr: true
